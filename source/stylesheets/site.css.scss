@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0.5em;
+}
+
+.sounds {
+  display: flex;
+}
+
+.sound {
+  background: #aaa;
+  width: 256px;
+  height: 128px;
+  border-radius: 4px;
+  padding: 1em;
+  margin: 0.5em;
+
+  &:hover {
+    background: #090;
+  }
+}
