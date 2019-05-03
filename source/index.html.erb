@@ -2,13 +2,17 @@
 title: Soundboard
 ---
 
-<div class="sounds">
-  <div class="sound">
-    <h2>The Price Is Wrong</h2>
-    <audio controls src="sounds/price-is-wrong.mp3"></audio>
-  </div>
-  <div class="sound">
-    <h2>Jeopardy Countdown</h2>
-    <audio controls src="sounds/jeopardy-countdown.mp3"></audio>
+<div class="container">
+  <div class="row">
+    <% data.sounds.each do |sound| %>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= sound.title %></h5>
+            <audio controls src="<%= sound.src %>"></audio>
+          </div>
+        </div>
+      </div>
+      <% end %>
   </div>
 </div>
