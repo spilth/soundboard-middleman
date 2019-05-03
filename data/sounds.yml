@@ -1,6 +1,10 @@
 -
-  title: The Price is Wrong
-  src: sounds/price-is-wrong.mp3
--
   title: Jeapordy Countdown
-  src: sounds/jeopardy-countdown.mp3
+  file: jeopardy-countdown.mp3
+-
+  title: Price Is Wrong
+  file: price-is-wrong.mp3
+-
+  title: Wilhelm Scream
+  file: wilhelm.mp3
+
