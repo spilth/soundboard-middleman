@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Fail immediately if any errors occur
+set -e
+
+if [[ $# -ne 2 ]]
+then
+    echo "Usage: youtube2mp3 <YouTube URL> <Base Filename>"
+else
+    url=$1
+    filename=$2
+    youtube-dl --extract-audio --audio-format mp3 $url -o "source/sounds/$filename.%(ext)s"
+
+    echo
+    echo "Audio file downloaded to 'source/sounds/${filename}.mp3'!"
+    echo "Now add an entry to 'data/sounds.yml'."
+fi
